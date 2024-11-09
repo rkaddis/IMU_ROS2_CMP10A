@@ -3,5 +3,5 @@ The nine-axis ARHS attitude sensor MEMS magnetometer bought from yahboom perform
 
 
 <p align="center">
-  <img src="readmefile/1.jpg" />
+  <img src="readmefile/1.jpg" width="500" />
 </p>
