@@ -3,9 +3,11 @@ The nine-axis ARHS attitude sensor MEMS magnetometer bought from yahboom perform
 <p align="center">
   <img src="readmefile/1.jpg" width="500" />
 </p>
+
 ## Install dependencies
 you must have serial, and change CMakeLists.txt
-# 手动设置自己的serial库路径
+
+## 手动设置自己的serial库路径
 ```bash
 set(SERIAL_INCLUDE_DIR /home/nano/ws/src/serial/include)
 set(SERIAL_LIBRARY /home/nano/ws/src/serial/build/libserial.a)
