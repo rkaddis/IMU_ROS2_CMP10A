@@ -7,11 +7,11 @@ The nine-axis ARHS attitude sensor MEMS magnetometer bought from yahboom perform
 ## Install dependencies
 you must have serial, and change CMakeLists.txt
 ```bash
-git clone https://github.com/wjwwood/serial
-make
-make test
-make doc
-sudo make install
+$ git clone https://github.com/wjwwood/serial
+$ make
+$ make test
+$ make doc
+$ sudo make install
 ```
 
 ## Manually set your own serial library path
@@ -20,12 +20,12 @@ set(SERIAL_INCLUDE_DIR /home/nano/ws/src/serial/include)
 set(SERIAL_LIBRARY /home/nano/ws/src/serial/build/libserial.a)
 ```
 ```bash
-rosdep update
-rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
-colcon build
+$ rosdep update
+$ rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
+$ colcon build
 ```
 ## Use IMU_Driver
 ```bash
-. install/setup.bash
-ros2 launch gnss_imu_sim imu_driver_launch.py
+$ . install/setup.bash
+$ ros2 launch gnss_imu_sim imu_driver_launch.py
 ```
