@@ -14,7 +14,7 @@ make doc
 sudo make install
 ```
 
-## 手动设置自己的serial库路径
+## Manually set your own serial library path
 ```bash
 set(SERIAL_INCLUDE_DIR /home/nano/ws/src/serial/include)
 set(SERIAL_LIBRARY /home/nano/ws/src/serial/build/libserial.a)
