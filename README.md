@@ -15,5 +15,10 @@ set(SERIAL_LIBRARY /home/nano/ws/src/serial/build/libserial.a)
 ```bash
 rosdep update
 rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
-colcon  build
+colcon build
+```
+## Use IMU_Driver
+```bash
+. install/setup.bash
+ros2 launch gnss_imu_sim imu_driver_launch.py
 ```
