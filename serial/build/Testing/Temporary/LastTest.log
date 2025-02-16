@@ -1,0 +1,74 @@
+Start testing: Feb 16 20:26 CST
+----------------------------------------------------------
+1/2 Testing: serial-test
+1/2 Test: serial-test
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test.gtest.xml" "--package-name" "serial" "--output-file" "/home/yuan/Modilocation/src/serial/build/ament_cmake_gtest/serial-test.txt" "--command" "/home/yuan/Modilocation/src/serial/build/tests/serial-test" "--gtest_output=xml:/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test.gtest.xml"
+Directory: /home/yuan/Modilocation/src/serial/build/tests
+"serial-test" start time: Feb 16 20:26 CST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/yuan/Modilocation/src/serial/build/tests':
+ - /home/yuan/Modilocation/src/serial/build/tests/serial-test --gtest_output=xml:/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test.gtest.xml
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from SerialTests
+[ RUN      ] SerialTests.readWorks
+[       OK ] SerialTests.readWorks (0 ms)
+[ RUN      ] SerialTests.writeWorks
+[       OK ] SerialTests.writeWorks (0 ms)
+[ RUN      ] SerialTests.timeoutWorks
+[       OK ] SerialTests.timeoutWorks (250 ms)
+[ RUN      ] SerialTests.partialRead
+[       OK ] SerialTests.partialRead (249 ms)
+[----------] 4 tests from SerialTests (499 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (499 ms total)
+[  PASSED  ] 4 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test.gtest.xml'
+-- run_test.py: verify result file '/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test.gtest.xml'
+<end of output>
+Test time =   0.57 sec
+----------------------------------------------------------
+Test Passed.
+"serial-test" end time: Feb 16 20:26 CST
+"serial-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: serial-test-timer
+2/2 Test: serial-test-timer
+Command: "/usr/bin/python3" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test-timer.gtest.xml" "--package-name" "serial" "--output-file" "/home/yuan/Modilocation/src/serial/build/ament_cmake_gtest/serial-test-timer.txt" "--command" "/home/yuan/Modilocation/src/serial/build/tests/serial-test-timer" "--gtest_output=xml:/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test-timer.gtest.xml"
+Directory: /home/yuan/Modilocation/src/serial/build/tests
+"serial-test-timer" start time: Feb 16 20:26 CST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/yuan/Modilocation/src/serial/build/tests':
+ - /home/yuan/Modilocation/src/serial/build/tests/serial-test-timer --gtest_output=xml:/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test-timer.gtest.xml
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from timer_tests
+[ RUN      ] timer_tests.short_intervals
+[       OK ] timer_tests.short_intervals (933 ms)
+[ RUN      ] timer_tests.overlapping_long_intervals
+[       OK ] timer_tests.overlapping_long_intervals (1011 ms)
+[----------] 2 tests from timer_tests (1944 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (1944 ms total)
+[  PASSED  ] 2 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test-timer.gtest.xml'
+-- run_test.py: verify result file '/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test-timer.gtest.xml'
+<end of output>
+Test time =   2.02 sec
+----------------------------------------------------------
+Test Passed.
+"serial-test-timer" end time: Feb 16 20:26 CST
+"serial-test-timer" time elapsed: 00:00:02
+----------------------------------------------------------
+
+End testing: Feb 16 20:26 CST
+
+gtest =   2.59 sec*proc
+

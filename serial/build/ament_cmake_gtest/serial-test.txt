@@ -1,0 +1,24 @@
+-- run_test.py: invoking following command in '/home/yuan/Modilocation/src/serial/build/tests':
+ - /home/yuan/Modilocation/src/serial/build/tests/serial-test --gtest_output=xml:/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test.gtest.xml
+
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from SerialTests
+[ RUN      ] SerialTests.readWorks
+[       OK ] SerialTests.readWorks (0 ms)
+[ RUN      ] SerialTests.writeWorks
+[       OK ] SerialTests.writeWorks (0 ms)
+[ RUN      ] SerialTests.timeoutWorks
+[       OK ] SerialTests.timeoutWorks (250 ms)
+[ RUN      ] SerialTests.partialRead
+[       OK ] SerialTests.partialRead (249 ms)
+[----------] 4 tests from SerialTests (499 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (499 ms total)
+[  PASSED  ] 4 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test.gtest.xml'
+-- run_test.py: verify result file '/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test.gtest.xml'

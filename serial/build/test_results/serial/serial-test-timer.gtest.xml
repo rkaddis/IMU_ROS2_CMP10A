@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" disabled="0" errors="0" time="1.944" timestamp="2025-02-16T20:26:08" name="AllTests">
+  <testsuite name="timer_tests" tests="2" failures="0" disabled="0" errors="0" time="1.944" timestamp="2025-02-16T20:26:08">
+    <testcase name="short_intervals" status="run" result="completed" time="0.933" timestamp="2025-02-16T20:26:08" classname="serial.timer_tests" />
+    <testcase name="overlapping_long_intervals" status="run" result="completed" time="1.011" timestamp="2025-02-16T20:26:09" classname="serial.timer_tests" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,20 @@
+-- run_test.py: invoking following command in '/home/yuan/Modilocation/src/serial/build/tests':
+ - /home/yuan/Modilocation/src/serial/build/tests/serial-test-timer --gtest_output=xml:/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test-timer.gtest.xml
+
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from timer_tests
+[ RUN      ] timer_tests.short_intervals
+[       OK ] timer_tests.short_intervals (933 ms)
+[ RUN      ] timer_tests.overlapping_long_intervals
+[       OK ] timer_tests.overlapping_long_intervals (1011 ms)
+[----------] 2 tests from timer_tests (1944 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (1944 ms total)
+[  PASSED  ] 2 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test-timer.gtest.xml'
+-- run_test.py: verify result file '/home/yuan/Modilocation/src/serial/build/test_results/serial/serial-test-timer.gtest.xml'
