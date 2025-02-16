@@ -13,7 +13,6 @@ $ mkdir build
 $ cd build
 $ make
 $ make test
-$ make doc
 $ sudo make install
 ```
 
