@@ -29,10 +29,10 @@ public:
     IMUDriverNode(const std::string& nodeName) : Node(nodeName)
     {
         // 获取串口
-        _port_name = this->declare_parameter<std::string>("port_name", "/dev/imu_link");
+        _port_name = this->declare_parameter<std::string>("port_name", "/dev/ttyUSB0");
         // 发布IMU数据
-        // publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("/imu/data_raw", 10);
-        publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("/unilidar/imu", 10);
+        publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("/imu/data_raw", 10);
+        // publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("/unilidar/imu", 10);
         // 发布磁力计数据
         mag_publisher_ = this->create_publisher<sensor_msgs::msg::MagneticField>("/imu/mag", 10);
         // IMU驱动线程
