@@ -7,7 +7,10 @@ The nine-axis ARHS attitude sensor MEMS magnetometer bought from yahboom perform
 ## Install dependencies
 you must have serial, and change CMakeLists.txt
 ```bash
-$ git clone https://github.com/wjwwood/serial
+$ cd serial
+$ rm -rf build
+$ mkdir build
+$ cd build
 $ make
 $ make test
 $ make doc
