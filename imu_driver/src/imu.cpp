@@ -13,7 +13,8 @@
 #include "rclcpp/rclcpp.hpp"
 #include <iostream>
 #include <string>
-#define BAUDRATE 921600
+// #define BAUDRATE 921600
+#define BAUDRATE 9600
 //#define BAUDRATE 115200
 std::atomic_bool imu_thread_running;
 std::atomic_bool imu_data_ready;

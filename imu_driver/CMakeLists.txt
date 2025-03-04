@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(gnss_imu_sim)
+project(imu_driver)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -10,11 +10,12 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(serial REQUIRED)
 
 # 手动设置serial库路径
-
-set(SERIAL_INCLUDE_DIR /home/nano/fishbot/src/serial/include)
-set(SERIAL_LIBRARY /home/nano/fishbot/src/serial/build/libserial.a)
+# get_filename_component(serial ${serial_DIR} DIRECTORY)
+set(SERIAL_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../serial/include")
+set(SERIAL_LIBRARY "${CMAKE_CURRENT_SOURCE_DIR}/../serial/build/libserial.a")
 
 add_executable(imu_driver_exe src/imu.cpp)
 target_include_directories(imu_driver_exe PUBLIC
