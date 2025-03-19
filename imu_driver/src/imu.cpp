@@ -31,13 +31,15 @@ public:
     {
         // 获取串口
         _port_name = this->declare_parameter<std::string>("port_name", "/dev/ttyUSB0");
+        rclcpp::Parameter imu_port_arg;
+        this->get_parameter("port_name", imu_port_arg);
         // 发布IMU数据
         publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("/imu/data_raw", 10);
         // publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("/unilidar/imu", 10);
         // 发布磁力计数据
         mag_publisher_ = this->create_publisher<sensor_msgs::msg::MagneticField>("/imu/mag", 10);
         // IMU驱动线程
-        imu_thread_ = std::thread(&IMUDriverNode::imuThread, this, _port_name);
+        imu_thread_ = std::thread(&IMUDriverNode::imuThread, this, imu_port_arg.value_to_string());
     }
 
     void joinIMUThread()
