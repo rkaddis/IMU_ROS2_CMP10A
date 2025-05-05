@@ -7,5 +7,5 @@ The nine-axis ARHS attitude sensor MEMS magnetometer bought from yahboom perform
 ## Use IMU_Driver
 ```bash
 $ . install/setup.bash
-$ ros2 launch gnss_imu_sim imu_driver_launch.py
+$ ros2 launch imu_driver imu_driver_launch.py
 ```
