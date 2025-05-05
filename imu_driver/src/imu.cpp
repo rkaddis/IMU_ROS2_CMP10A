@@ -177,7 +177,7 @@ private:
                 //RCLCPP_INFO(get_logger(),"val:%f",M_PI);
                // RCLCPP_INFO(get_logger(),"roll:%f",roll);
                // RCLCPP_INFO(get_logger(),"pitch:%f",pitch);
-                RCLCPP_INFO(get_logger(),"yaw:%f",yaw*M_PI/180);
+                // RCLCPP_INFO(get_logger(),"yaw:%f",yaw*M_PI/180);
                 tf2::Quaternion quat;
                 quat.setRPY(roll*M_PI/180, pitch*M_PI/180, yaw*M_PI/180);
 
