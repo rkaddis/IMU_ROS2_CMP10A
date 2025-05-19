@@ -151,7 +151,7 @@ private:
                 // 发布IMU数据
                 sensor_msgs::msg::Imu imu_msg;
                 imu_msg.header.stamp = this->now();
-                imu_msg.header.frame_id = "base_link";
+                imu_msg.header.frame_id = "imu_link";
 
                 imu_msg.linear_acceleration.x = static_cast<double>(acceleration[0]) / 32768.0 * 16 *9.8 ;
                 imu_msg.linear_acceleration.y = static_cast<double>(acceleration[1]) / 32768.0 * 16 *9.8 ;
@@ -192,7 +192,7 @@ private:
                 // 发布磁力计数据
                 sensor_msgs::msg::MagneticField mag_msg;
                 mag_msg.header.stamp = this->now();
-                mag_msg.header.frame_id = "base_link";
+                mag_msg.header.frame_id = "imu_link";
                 mag_msg.magnetic_field.x = static_cast<double>(magnetometer[0]);
                 mag_msg.magnetic_field.y = static_cast<double>(magnetometer[1]);
                 mag_msg.magnetic_field.z = static_cast<double>(magnetometer[2]);
