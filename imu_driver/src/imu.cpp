@@ -166,9 +166,9 @@ private:
                         imu_msg.linear_acceleration.y=0;
                  }
                 
-                imu_msg.angular_velocity.x = static_cast<double>(angularVelocity[0]) / 32768.0 * 2000;
-                imu_msg.angular_velocity.y = static_cast<double>(angularVelocity[1]) / 32768.0 * 2000 ;
-                imu_msg.angular_velocity.z = static_cast<double>(angularVelocity[2]) / 32768.0 * 2000;
+                imu_msg.angular_velocity.x = static_cast<double>(angularVelocity[0]) / 32768.0 * 2000 * (M_PI / 180.0);
+                imu_msg.angular_velocity.y = static_cast<double>(angularVelocity[1]) / 32768.0 * 2000 * (M_PI / 180.0);
+                imu_msg.angular_velocity.z = static_cast<double>(angularVelocity[2]) / 32768.0 * 2000 * (M_PI / 180.0);
 
                 double roll = static_cast<double>(angle_degree[0]) / 32768* 180;
                 double pitch = static_cast<double>(angle_degree[1]) / 32768* 180;
